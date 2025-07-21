@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import css from './MainHeader.module.css'
+import Navigation from '../Navigation'
 
 export default function MainHeader() {
   return (
@@ -16,7 +17,7 @@ export default function MainHeader() {
         </div>
       </div>
       <div id={css['header-right-container']}>
-        {/* nav and other items will go here */}
+        <Navigation />
       </div>
     </header>
   )

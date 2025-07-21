@@ -3,7 +3,7 @@ export default function Index() {
     <>
         <div className="flex-container">
           <div>
-            <h1>Pallets</h1>
+            <h1>Cell Schedule</h1>
           </div>
       </div>
     </>

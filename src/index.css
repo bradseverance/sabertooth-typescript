@@ -25,9 +25,13 @@ a:hover {
 	text-decoration: none;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 /* Main Content */
 main {
-  padding: 30px 20px;
+  padding: 25px;
 }
 
 h1 {
@@ -40,8 +44,7 @@ h1 {
 
 ul.bulleted-list {
   list-style: disc;
-  margin-left: 20px;
-  margin-top: 1em;
+  margin: 0 0 1.5em 2em;
 }
 
 ul.bulleted-list a {

@@ -1,3 +1,10 @@
+import MainRouteGroupsList from "../components/routes/MainRouteGroupsList";
+
 export default function Home() {
-  return <h2>Welcome to the Home Page</h2>;
+  return (
+    <>
+        <h1>Welcome to Saber Tooth</h1>
+        <MainRouteGroupsList />
+    </>
+  )
 }

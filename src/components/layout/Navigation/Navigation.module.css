@@ -1,0 +1,73 @@
+.navigation {
+	position: absolute;
+	top: 58px;
+	padding-left: 10px;
+	z-index: 9999;
+}
+.navigation ul {
+	margin: 0;
+	list-style: none;
+}
+.navigation ul li {
+	list-style: none;
+	position: relative;
+}
+.level-0 li {
+	float: left;
+	z-index: 9999;
+}
+.level-0 li a {
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 8px 9px 7px 11px;
+	font-weight: bold;
+	z-index: 9999;
+	border-bottom: none;
+	position: relative;
+	z-index: 9999999;
+}
+.level-0 li a span {
+    padding: 0 13px 0 0;
+}
+.level-0 li a:hover,
+.level-0 li:hover a {
+	background: #53565A;
+	border: 1px solid #999;
+	border-bottom: none;
+	padding: 7px 8px 6px 10px;
+}
+.navigation ul.level-1 {
+	position: absolute;
+	left: -10000px;
+	width: 15em;
+	top: 35px;
+	border: 1px solid #999;
+	background: #fff;
+	z-index: 999;
+	-webkit-box-shadow: 2px 2px 3px 1px #999;
+	box-shadow: 2px 2px 3px 1px #999;
+}
+.navigation ul.level-1 li {
+	float: none;
+	font-size: 14px;
+}
+.navigation ul.level-1 li.hide-desktop {
+	display: none;
+}
+.navigation ul.level-1 li a,
+.level-0 li:hover li a {
+	text-transform: none;
+	font-weight: normal;
+	border: none;
+	padding: 5px 10px;
+}
+.navigation ul.level-1 li a:hover {
+	background: #FFFFFF;
+	color: #000000;
+	border: none;
+}
+.level-0 li:hover ul.level-1 {
+	left: 0;
+}

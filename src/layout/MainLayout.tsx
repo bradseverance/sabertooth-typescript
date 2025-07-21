@@ -8,7 +8,9 @@ export default function MainLayout() {
     <>
         <DynamicTitle />
         <MainHeader />
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
         <Footer />
     </>
   )
