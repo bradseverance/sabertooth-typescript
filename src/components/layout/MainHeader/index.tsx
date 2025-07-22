@@ -10,7 +10,7 @@ export default function MainHeader() {
           <Link to="/">
             <img
               id={css['logo-image']}
-              src="/images/logo.png" // or wherever your logo lives
+              src="/images/logo.png"
               alt="POLYWOOD Scheduler"
             />
           </Link>
