@@ -5,10 +5,7 @@ import { navRegistry } from '../components/navigation/Registry';
 
 export const NavGroups = Object.entries(navRegistry).map(([groupKey, group]) => (
   <Route path={group.basePath} key={groupKey}>
-    <Route
-      index
-      element={<GroupIndexPage group={groupKey as keyof typeof navRegistry} />}
-    />
+    <Route index element={<GroupIndexPage group={groupKey as keyof typeof navRegistry} />} />
   </Route>
 ));
 
