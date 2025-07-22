@@ -1,14 +1,14 @@
 // src/components/GroupIndexPage.tsx
 import { Link } from 'react-router-dom';
-import { routeRegistry } from '../../routes/routeRegistry.ts';
-import type { RouteGroupKey } from '../../routes/routeRegistry.ts';
+import { navRegistry } from './Registry.ts';
+import type { NavGroupKey } from './Registry.ts';
 
 interface Props {
-  group: RouteGroupKey;
+  group: NavGroupKey;
 }
 
 export default function GroupIndexPage({ group }: Props) {
-  const groupDef = routeRegistry[group];
+  const groupDef = navRegistry[group];
 
   if (!groupDef) {
     return <div>Unknown group: {group}</div>;
