@@ -1,4 +1,4 @@
-import MainRouteGroupsList from '../components/navigation/MainRouteGroupsList'
+import MainRouteGroupsList from '@components/navigation/MainRouteGroupsList'
 
 export default function Home() {
   return (

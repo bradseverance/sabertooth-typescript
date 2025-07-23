@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import css from './Navigation.module.css'
-import { navRegistry } from '../../navigation/Registry';;
+import { navRegistry } from '@components/navigation/Registry';;
 
 export default function Navigation() {
   return (

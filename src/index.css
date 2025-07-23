@@ -16,6 +16,15 @@ body {
   padding-bottom: 40px; /* for footer spacing */
 }
 
+input {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.login-body {
+  background: #E2E8EA;
+  text-align: center;
+}
+
 a {
 	color: #0074A2;
 	text-decoration: underline;
@@ -119,10 +128,6 @@ ul.bulleted-list a:hover {
     font-size: 1.3em;
     padding: .2em .4em;
     width: auto;
-}
-
-.saber-form input {
-    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
 }
 
 .saber-form input[type='text'] {
