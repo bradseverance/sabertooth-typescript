@@ -16,7 +16,7 @@ body {
   padding-bottom: 40px; /* for footer spacing */
 }
 
-input {
+input, select {
   font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
 }
 
