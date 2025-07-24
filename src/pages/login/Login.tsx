@@ -14,7 +14,7 @@ export default function Login() {
 
     return (
         <>
-            <h1>Log in to Your Account</h1>
+            <h1>Log In to Your Account</h1>
             <div className={css['login-wrapper']}>
                 <form>
                     <div className={css['input-wrapper']}>
@@ -36,6 +36,10 @@ export default function Login() {
                             <option>Wayfair Castlegate</option>
                             <option>Overstock 3PL</option>
                         </select>
+                    </div>
+                    <div className={css['submit-wrapper']}>
+                        <input type='submit' name='submitLogin' value='Submit' />
+                        <span><Link to='forgot-password'>Forgot Password?</Link></span>
                     </div>                
                 </form>
             </div>

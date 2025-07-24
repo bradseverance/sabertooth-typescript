@@ -14,7 +14,7 @@
     width: 100%;
 }
 
-.remember-me-wrapper, .campus-wrapper {
+.remember-me-wrapper, .campus-wrapper, .submit-wrapper {
     text-align: left;
     margin-bottom: 20px;
 }
@@ -27,6 +27,8 @@
 
 input[name='rememberMe'] {
     display: inline;
+    position: relative;
+    top: 2px;
 }
 
 .campus-wrapper > label {
@@ -41,4 +43,13 @@ select[name='selectedCampus'] {
     border: 1px solid #7F9DB9;
     width: 100%;
     font-size: 1rem;
+}
+
+input[type=submit] {
+    padding: .2em .35em;
+    font-size: 1rem;
+}
+
+.submit-wrapper > span {
+    margin-left: 10px;
 }
