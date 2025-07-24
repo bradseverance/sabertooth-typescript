@@ -1,8 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react';
 import css from './TouchLogin.module.css'
 import { Link } from 'react-router-dom'
 
 export default function TouchLogin() {
+    const [pin, setPin] = useState('');
+
     useEffect(() => {
         document.body.classList.add('login-body')
         return () => {
@@ -10,23 +12,24 @@ export default function TouchLogin() {
         }
     }, [])
 
+    function handleKeyPadClick(keyPad: number) {
+        if (pin.length < 6) {
+            setPin(prev => prev + keyPad.toString());
+        }
+    }
+
     return (
         <>
             <h1>Log in to Your Account</h1>
             <div className={css['login-wrapper']}>
                 <form>
-                    <p id={css.userPinDummy}></p>
+                    <p id={css.userPinDummy}>{'*'.repeat(pin.length)}</p>
                     <ul className={css.keypad}>
-                        <li><a id="key-1">1</a></li>
-                        <li><a id="key-2">2</a></li>
-                        <li><a id="key-3">3</a></li>
-                        <li><a id="key-4">4</a></li>
-                        <li><a id="key-5">5</a></li>
-                        <li><a id="key-6">6</a></li>
-                        <li><a id="key-7">7</a></li>
-                        <li><a id="key-8">8</a></li>
-                        <li><a id="key-9">9</a></li>
-                        <li><a id="key-0">0</a></li>
+                        {[1,2,3,4,5,6,7,8,9,0].map(digit => (
+                            <li key={digit}>
+                                <a onClick={() => handleKeyPadClick(digit)}>{digit}</a>
+                            </li>
+                        ))}
                         <li><a id={css.formReset}>Clear</a></li>
                     </ul>
                     <div className={css['campus-wrapper']}>
